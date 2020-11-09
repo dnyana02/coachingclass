@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '52vid!n_mh&rl)uwx@ew%b*tqmfd#f)nz-m!1fp6vq#^sp3vsp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'coaching.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'coaching',
+        'USER': 'postgres',
+        'PASSWORD':'Rushi@2000',
+        'HOST': 'localhost',
+        'PORT':'5432',
     }
 }
 
@@ -127,6 +131,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL ='/images/'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static')

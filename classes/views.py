@@ -95,7 +95,7 @@ def updateteacher(request,pk):
 		form = TeacherForm(request.POST, instance=Teacher)
 		if form.is_valid():
 			form.save()
-			return redirect('/')
+			return redirect('dashboard')
 
 	context = {'form':form}
 	return render(request, 'classes/order_form.html', context)
@@ -108,7 +108,7 @@ def updatetestinomial(request,pk):
 		form = TestinomialForm(request.POST, instance=Testinomial)
 		if form.is_valid():
 			form.save()
-			return redirect('/')
+			return redirect('dashboard')
 
 	context = {'form':form}
 	return render(request, 'classes/order_form.html', context)
@@ -122,7 +122,7 @@ def updateresultslider(request,pk):
 		form = ResultsliderForm(request.POST, instance=Resultslider)
 		if form.is_valid():
 			form.save()
-			return redirect('/')
+			return redirect('dashboard')
 
 	context = {'form':form}
 	return render(request, 'classes/order_form.html', context)
