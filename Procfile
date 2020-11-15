@@ -1,1 +1,1 @@
-"web:gunicorn coaching.wsgi--log-file -"
+web: gunicorn coaching.wsgi --log-file -
