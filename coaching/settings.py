@@ -29,7 +29,7 @@ SECRET_KEY = '52vid!n_mh&rl)uwx@ew%b*tqmfd#f)nz-m!1fp6vq#^sp3vsp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://mighty-plains-45947.herokuapp.com/"]
+ALLOWED_HOSTS = ["https://mighty-plains-45947.herokuapp.com"]
 
 
 # Application definition
