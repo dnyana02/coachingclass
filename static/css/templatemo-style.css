@@ -268,7 +268,7 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   .custom-navbar .nav li.active > a {
-    background-color: transparentw;
+    background-color: transparent;
     color: #ce3232;
   }
 
@@ -278,7 +278,7 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   .custom-navbar .navbar-toggle {
-    background-color: transparent;
+    background-color: white;
   }
 
   .custom-navbar .navbar-toggle .icon-bar {

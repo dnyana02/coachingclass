@@ -50,3 +50,25 @@ class resultslider(models.Model):
 
     def __str__(self):
         return str(self.yr)
+
+
+class Student(models.Model):
+     YCLASS = (
+        ('5th','5th'),
+        ('6th','6th'),
+        ('7th','7th'),
+        ('8th','8th'),
+        ('9th','9th'),
+        ('10th','10th'),
+    )
+     sno = models.AutoField(primary_key=True)
+     name = models.CharField(max_length=255)
+     phone = models.CharField(max_length=13)
+     Yclass = models.CharField(max_length=200, null=True, choices = YCLASS)
+     email = models.CharField(max_length=100)
+     feespaid = models.FloatField(null = True)
+     remainingfees = models.FloatField(null = True)
+     timestamp = models.DateTimeField(auto_now_add=True,blank=True)
+
+     def __str__(self):
+        return str(self.name)

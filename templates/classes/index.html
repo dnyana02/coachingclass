@@ -26,10 +26,9 @@ http://www.templatemo.com/tm-509-hydro
      <link rel="stylesheet" href="{% static 'css/test.css' %}">
      <style>
           .hello-msg {
-               font-size: 18px;
-               color: #fff;
-               margin-right: 20px;
-               ;
+               font-size: 14px;
+               color: black;
+               
           }
      </style>
 </head>
@@ -45,7 +44,7 @@ http://www.templatemo.com/tm-509-hydro
 
 
      <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" style="background-color: white;">
           <div class="container">
 
                <div class="navbar-header">
@@ -404,7 +403,10 @@ http://www.templatemo.com/tm-509-hydro
                                    <textarea class="form-control" rows="6" placeholder="Enquiry in detail"
                                         id="cf-message" name="content" required=""></textarea>
                               </div>
-
+                              <div class="col-md-12 col-sm-12">
+                              <script src='https://www.google.com/recaptcha/api.js'></script>
+                              <div class="g-recaptcha" data-sitekey="6LcAqxYaAAAAALBMCPvboHp9Qfai89miy7SHykDx"></div>
+                              <br></div><br>
                               <div class="col-md-4 col-sm-12">
                                    <input type="submit" class="form-control" name="submit" value="Send Message">
                               </div>
@@ -513,7 +515,7 @@ http://www.templatemo.com/tm-509-hydro
 
 
 
-
+     
 
      <!-- SCRIPTS -->
      <script src="{% static 'js/custom.js' %}"></script>

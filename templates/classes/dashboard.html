@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Dashboard</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
      <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
      <link rel="stylesheet" href="{% static '/css/font-awesome.min.css' %}">
@@ -32,16 +35,13 @@
                  <div class="collapse navbar-collapse">
                       <ul  class="nav navbar-nav navbar-nav-first">
                            <li><a href="{% url 'home' %}" class="">Home</a></li>
-                           <li><a href="#about" class="">About</a></li>
-                           <li><a href="#team" class="">Our Team</a></li>
-                           <li><a href="#testimonial" class="">Testimonials</a></li>
-                           <li><a href="#results" class="">Our Results</a></li>
-                           <li><a href="#contact" class="">Contacts</a></li>
-                           {% if request.user.is_staff %}
-                           <li><a href="{% url 'dashboard' %}" class="">admin</a></li>
-                           {% endif %}
+                           
                       </ul>
-  
+                      <ul  class="nav navbar-nav navbar-nav-first">
+                        <li><a href="{% url 'dashboardstudent' %}" class="">Student info</a></li>
+                        
+                   </ul>
+
                       <ul class="nav navbar-nav navbar-right">
                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -58,12 +58,12 @@
   
             </div>
        </section>
-
+          <div><br><br><br>
         <h1>dashboard</h1>
-     
+    </div>
         <div class="row">
             <div class="col-md-5">
-                <h5>Interested Students:</h5>
+                <h3>Interested Students:</h3>
                 <hr>
                 <div class="card card-body">
                    
@@ -85,7 +85,7 @@
             </div>
 
             <div class="col-md-7">
-                <h5>Teachers</h5>
+                <h3>Teachers</h3>
                 <hr>
                 <div class="card card-body">
                     
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <h5>Testimonials</h5>
+                <h3>Testimonials</h3>
                 <hr>
                 <div class="card card-body">
                     
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <h5>Resultsphotos</h5>
+                <h3>Resultsphotos</h3>
                 <hr>
                 <div class="card card-body">
                     

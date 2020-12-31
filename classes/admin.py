@@ -8,3 +8,4 @@ admin.site.register(teacher)
 
 admin.site.register(testinomial)
 admin.site.register(resultslider)
+admin.site.register(Student)

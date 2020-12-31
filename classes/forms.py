@@ -23,3 +23,13 @@ class ResultsliderForm(ModelForm):
     class Meta:
         model = resultslider
         fields = ['yr','result_pic']
+
+class StudentForm(ModelForm):
+    class Meta:
+        model = Student
+        fields = ['name','Yclass','phone','email','feespaid','remainingfees']
+
+class OrderForm(ModelForm):
+    class Meta:
+        model = Student
+        fields = ['name','Yclass','phone','email','feespaid','remainingfees']
