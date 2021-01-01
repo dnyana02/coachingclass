@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 from django.contrib import messages
 import dj_database_url
-import django_heroku
+#import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -152,4 +152,4 @@ GOOGLE_RECAPTCHA_SECRET_KEY = '6LcAqxYaAAAAAIbU7eQQdn-czQkyewrzcrT2Nyfr'
 
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF =True
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
