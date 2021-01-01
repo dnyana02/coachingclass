@@ -28,7 +28,7 @@ SECRET_KEY = '52vid!n_mh&rl)uwx@ew%b*tqmfd#f)nz-m!1fp6vq#^sp3vsp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*',https://rushikeshs2-coachingclass.zeet.app/']
 
 
 # Application definition
