@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '52vid!n_mh&rl)uwx@ew%b*tqmfd#f)nz-m!1fp6vq#^sp3vsp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*','rushikeshs2-coachingclass.zeet.app']
 
